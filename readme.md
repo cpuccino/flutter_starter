@@ -15,9 +15,11 @@ Use this template to start up a new flutter project
 - [Rename](https://pub.dev/packages/rename) the project and update it's bundle id using
   ```
   pub global activate rename
-  rename --bundleId "com.cpuccino.appname"
-  rename --appname "App Name"
+  pub global run rename --bundleId "com.cpuccino.appname"
+  pub global run rename --appname "App Name"
   ```
+- Do a global search for any remaining instance of "com.example.flutter_starter" and replace it with the proper value
+- Replace `android/app/src/main/kotlin/com/example/flutter_starter` with `android/app/src/main/kotlin/com/cpuccino/appname`
 
 ### Project structure
 
